@@ -4,151 +4,123 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>دکتر محمد سعید سوداگر - متخصص اورولوژی</title>
+<!-- Bootstrap RTL -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css" rel="stylesheet" />
 <style>
-  /* Reset */
-  * {
-    margin: 0; padding: 0; box-sizing: border-box;
-  }
   body {
     font-family: 'Vazir', Tahoma, sans-serif;
-    line-height: 1.6;
-    background: #fefefe;
-    color: #222;
-  }
-  a {
-    text-decoration: none;
-    color: #004085;
-    transition: color 0.3s;
-  }
-  a:hover {
-    color: #007bff;
+    background-color: #f8f9fa;
   }
   header {
-    background: #fff;
-    box-shadow: 0 2px 5px rgb(0 0 0 / 0.1);
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 10;
+    background: #004085;
   }
-  .container {
-    width: 90%;
-    max-width: 900px;
-    margin: 0 auto;
-  }
-  nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 60px;
-  }
-  nav .logo {
+  header .navbar-brand {
+    color: #fff;
     font-weight: 700;
-    font-size: 1.3rem;
-    color: #004085;
+    font-size: 1.5rem;
   }
-  nav ul {
-    display: flex;
-    gap: 25px;
-    list-style: none;
-  }
-  nav ul li a {
+  header .navbar-nav .nav-link {
+    color: #cce5ff;
     font-weight: 600;
   }
-  nav ul li a.active {
-    color: #007bff;
-    border-bottom: 2px solid #007bff;
+  header .navbar-nav .nav-link:hover {
+    color: #fff;
   }
-
-  main {
-    padding-top: 80px;
+  .hero {
+    background: url('https://images.unsplash.com/photo-1580281657524-cbc9eea0aef6?auto=format&fit=crop&w=1350&q=80') no-repeat center center;
+    background-size: cover;
+    color: white;
+    padding: 120px 30px;
+    text-align: center;
+    font-weight: 700;
+    text-shadow: 0 0 10px rgba(0,0,0,0.7);
   }
-  section {
-    padding: 50px 0;
-    border-bottom: 1px solid #ddd;
-  }
-  h2 {
-    font-size: 1.8rem;
-    margin-bottom: 20px;
+  .section-title {
     color: #004085;
+    margin-bottom: 30px;
+    font-weight: 700;
   }
-  p, ul {
-    font-size: 1.05rem;
-    color: #333;
+  .service-icon {
+    font-size: 40px;
+    color: #004085;
+    margin-bottom: 15px;
   }
-  ul {
-    padding-right: 20px;
-  }
-  ul li {
-    margin-bottom: 8px;
-  }
-
   footer {
-    padding: 20px 0;
+    background: #004085;
+    color: #cce5ff;
+    padding: 15px 0;
     text-align: center;
     font-size: 0.9rem;
-    color: #666;
-  }
-  /* Smooth scroll */
-  html {
-    scroll-behavior: smooth;
-  }
-
-  /* Responsive */
-  @media(max-width: 600px){
-    nav ul {
-      gap: 15px;
-      font-size: 0.9rem;
-    }
   }
 </style>
-
 <!-- Vazir Font -->
 <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/font-face.css" rel="stylesheet" />
+<!-- Bootstrap Icons -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
 </head>
 <body>
 
 <header>
-  <div class="container">
-    <nav>
-      <div class="logo">دکتر سعید سوداگر</div>
-      <ul>
-        <li><a href="#about" class="active">درباره</a></li>
-        <li><a href="#services">خدمات</a></li>
-        <li><a href="#experience">سابقه کاری</a></li>
-        <li><a href="#contact">تماس</a></li>
+  <nav class="navbar navbar-expand-lg container">
+    <a class="navbar-brand" href="#">دکتر سعید سوداگر</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+      aria-controls="navbarNav" aria-expanded="false" aria-label="نمایش منو">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link active" href="#about">درباره</a></li>
+        <li class="nav-item"><a class="nav-link" href="#services">خدمات</a></li>
+        <li class="nav-item"><a class="nav-link" href="#experience">سابقه</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">تماس</a></li>
       </ul>
-    </nav>
-  </div>
+    </div>
+  </nav>
 </header>
 
-<main class="container">
-  <section id="about">
-    <h2>درباره دکتر</h2>
-    <p>دکتر محمد سعید سوداگر، متخصص اورولوژی، کلیه و مجاری ادراری در دزفول با بیش از ۳۰ سال سابقه و کد نظام پزشکی ۲۹۹۱۱، خدمات تشخیصی و درمانی پیشرفته ارائه می‌کند.</p>
+<section class="hero">
+  <div class="container">
+    <h1>دکتر محمد سعید سوداگر</h1>
+    <p>متخصص جراحی کلیه و مجاری ادراری (اورولوژی) در دزفول</p>
+  </div>
+</section>
+
+<main class="container my-5">
+  <section id="about" class="mb-5">
+    <h2 class="section-title">درباره دکتر</h2>
+    <p>دکتر محمد سعید سوداگر با بیش از ۳۰ سال سابقه در زمینه اورولوژی، خدمات تخصصی تشخیصی و درمانی بیماری‌های کلیه، مجاری ادراری و دستگاه تناسلی را ارائه می‌دهد. شماره نظام پزشکی: ۲۹۹۱۱.</p>
   </section>
 
-  <section id="services">
-    <h2>خدمات</h2>
-    <ul>
-      <li>درمان سنگ کلیه</li>
-      <li>درمان عفونت‌های ادراری</li>
-      <li>مدیریت بی‌اختیاری ادرار</li>
-      <li>مداوای مشکلات پروستات</li>
-      <li>کمک به درمان ناباروری مردان</li>
-      <li>درمان اختلالات جنسی مردان</li>
-    </ul>
+  <section id="services" class="mb-5">
+    <h2 class="section-title">خدمات تخصصی</h2>
+    <div class="row">
+      <div class="col-md-4 text-center">
+        <i class="bi bi-droplet service-icon"></i>
+        <h5>درمان سنگ کلیه</h5>
+        <p>ارائه درمان‌های پیشرفته برای انواع سنگ‌های کلیوی.</p>
+      </div>
+      <div class="col-md-4 text-center">
+        <i class="bi bi-bandaid service-icon"></i>
+        <h5>درمان عفونت‌های ادراری</h5>
+        <p>تشخیص و درمان سریع و مؤثر عفونت‌های ادراری.</p>
+      </div>
+      <div class="col-md-4 text-center">
+        <i class="bi bi-people service-icon"></i>
+        <h5>مشاوره ناباروری</h5>
+        <p>ارائه خدمات تخصصی برای درمان ناباروری مردان.</p>
+      </div>
+    </div>
   </section>
 
-  <section id="experience">
-    <h2>سابقه کاری</h2>
-    <p>بیش از ۳۰ سال سابقه در جراحی کلیه و مجاری ادراری. همکاری با بیمارستان گنجویان دزفول و ارائه خدمات تخصصی با تجهیزات پیشرفته مانند سونوگرافی، یورودینامیک و سیستوسکوپی.</p>
+  <section id="experience" class="mb-5">
+    <h2 class="section-title">سوابق کاری</h2>
+    <p>بیش از ۳۰ سال سابقه در جراحی کلیه و مجاری ادراری، همکاری با بیمارستان گنجویان دزفول و استفاده از تجهیزات تخصصی مانند سونوگرافی، یورودینامیک و سیستوسکوپی.</p>
   </section>
 
-  <section id="contact">
-    <h2>تماس با مطب</h2>
-    <p>آدرس: دزفول، خیابان آفرینش، نبش طالقانی</p>
-    <p>شماره تماس: ۲۲۳۵۱۱۷</p>
+  <section id="contact" class="mb-5">
+    <h2 class="section-title">تماس با مطب</h2>
+    <p><strong>آدرس:</strong> دزفول، خیابان آفرینش، نبش طالقانی</p>
+    <p><strong>تلفن:</strong> ۰۶۱-۲۲۳۵۱۱۷</p>
   </section>
 </main>
 
@@ -158,5 +130,6 @@
   </div>
 </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
