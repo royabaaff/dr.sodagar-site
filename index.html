@@ -1,58 +1,106 @@
 <!DOCTYPE html>
 <html lang="fa">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>دکتر محمد سعید سوداگر</title>
-  <style>
-    body {
-      font-family: 'Tahoma', sans-serif;
-      background: #f5f7fa;
-      color: #333;
-      margin: 0; padding: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      flex-direction: column;
-    }
-    .container {
-      background: white;
-      padding: 30px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.1);
-      border-radius: 8px;
-      max-width: 400px;
-      text-align: center;
-    }
-    img {
-      border-radius: 50%;
-      width: 120px;
-      height: 120px;
-      object-fit: cover;
-      margin-bottom: 20px;
-    }
-    h1 {
-      margin: 0 0 10px 0;
-    }
-    p {
-      line-height: 1.5;
-      color: #666;
-    }
-    a {
-      margin-top: 15px;
-      display: inline-block;
-      text-decoration: none;
-      color: #1976d2;
-      font-weight: bold;
-    }
-  </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>دکتر محمد سعید سوداگر - متخصص اورولوژی</title>
+<style>
+  body {
+    font-family: 'Tahoma', sans-serif;
+    background: #f9f9f9;
+    color: #333;
+    margin: 0; padding: 0;
+    direction: rtl;
+  }
+  .header {
+    background: #1976d2;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  .container {
+    max-width: 700px;
+    margin: 30px auto;
+    background: white;
+    padding: 25px 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.1);
+  }
+  .profile-pic {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 20px;
+  }
+  h1, h2 {
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  p {
+    line-height: 1.6;
+    margin: 10px 0;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  ul li {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+  }
+  .section {
+    margin-top: 30px;
+  }
+  .contact {
+    text-align: center;
+    margin-top: 40px;
+  }
+  .contact a, .contact span {
+    display: inline-block;
+    margin: 0 10px;
+    color: #1976d2;
+    font-weight: bold;
+    text-decoration: none;
+  }
+</style>
 </head>
 <body>
-  <div class="container">
-    <img src="https://via.placeholder.com/120" alt="عکس دکتر صداگار" />
-    <h1>دکتر صداگار</h1>
-    <p>متخصص جراحی کلیه و مجاری ادراری (اورولوژی)</p>
-    <a href="mailto:email@example.com">تماس با من</a>
+
+<div class="header">
+  <h1>دکتر محمد سعید سوداگر</h1>
+  <p>متخصص جراحی کلیه و مجاری ادراری (اورولوژی)</p>
+</div>
+
+<div class="container">
+  <img src="https://via.placeholder.com/140" alt="عکس دکتر محمد سعید سوداگر" class="profile-pic" />
+  
+  <div class="section">
+    <h2>درباره دکتر</h2>
+    <p>دکتر محمد سعید سوداگر متخصص جراحی کلیه و مجاری ادراری (اورولوژی) در دزفول هستند. ایشان دارای شماره نظام پزشکی ۲۹۹۱۱ می‌باشند و خدمات تشخیصی و درمانی در زمینه بیماری‌های مجاری ادراری و دستگاه تناسلی ارائه می‌دهند.</p>
   </div>
+
+  <div class="section">
+    <h2>مطب</h2>
+    <p>دزفول، خیابان آفرینش، نبش طالقانی</p>
+    <p>تلفن مطب: <a href="tel:+9822235117">۲۲۳۵۱۱۷</a></p>
+  </div>
+
+  <div class="section">
+    <h2>تخصص‌ها و سوابق</h2>
+    <ul>
+      <li>جراحی کلیه، مجاری ادراری و تناسلی (اورولوژی)</li>
+      <li>بیش از ۳۰ سال سابقه کار در زمینه جراحی اورولوژی</li>
+    </ul>
+  </div>
+  
+  <div class="contact">
+    <h2>راه‌های ارتباطی</h2>
+    <a href="tel:+9822235117">تماس تلفنی</a>
+    <!-- ایمیل رو اگر داری بگو اضافه کنم -->
+  </div>
+</div>
+
 </body>
 </html>
