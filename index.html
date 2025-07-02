@@ -17,11 +17,11 @@
     color: #e0e0e0;
   }
   header {
-    background: #1f2937; /* تیره و آرام */
+    background: #1f2937;
     box-shadow: 0 2px 8px rgba(0,0,0,0.7);
   }
   header .navbar-brand {
-    color: #4ade80; /* سبز نئونی آرام */
+    color: #4ade80;
     font-weight: 700;
     font-size: 1.7rem;
   }
@@ -35,7 +35,7 @@
   .hero {
     background: linear-gradient(rgba(18,18,18,0.85), rgba(18,18,18,0.85)), url('https://images.unsplash.com/photo-1579154203451-6d9248a6bc11?auto=format&fit=crop&w=1350&q=80') no-repeat center center;
     background-size: cover;
-    color: #a7f3d0; /* سبز ملایم */
+    color: #a7f3d0;
     padding: 130px 20px;
     text-align: center;
     font-weight: 700;
@@ -87,37 +87,26 @@
     text-decoration: underline;
     color: #86efac;
   }
-  /* بخش نظرات ثابت کوچک گوشه پایین چپ */
+  /* بخش نظرات */
   #reviews {
-    position: fixed;
-    bottom: 50px;
-    left: 15px;
-    width: 320px;
-    max-height: 400px;
     background: #1f2937;
     color: #a7f3d0;
     border-radius: 10px;
     box-shadow: 0 0 20px #22c55e;
-    overflow-y: auto;
-    font-size: 0.85rem;
-    padding: 10px;
-    z-index: 1050;
+    padding: 15px 20px;
   }
   #reviews-header {
-    background: #22c55e;
-    color: #111827;
     font-weight: 700;
-    padding: 8px 12px;
-    border-radius: 8px 8px 0 0;
     text-align: center;
-    margin-bottom: 8px;
-    user-select: none;
+    margin-bottom: 15px;
+    font-size: 1.25rem;
+    color: #4ade80;
   }
   #reviews iframe {
     width: 100%;
-    height: 320px;
+    height: 400px;
     border: none;
-    border-radius: 0 0 8px 8px;
+    border-radius: 8px;
   }
 </style>
 </head>
@@ -185,19 +174,17 @@
     <p><strong>آدرس:</strong> دزفول، خیابان آفرینش، نبش طالقانی</p>
     <p><strong>تلفن:</strong> <a class="contact-link" href="tel:0612235117">۰۶۱۲۲۳۵۱۱۷</a></p>
   </section>
+
+  <!-- بخش نظرات -->
+  <section id="reviews">
+    <div id="reviews-header">نظرات بیماران</div>
+    <iframe src="https://example.com/comments-widget" title="نظرات بیماران"></iframe>
+  </section>
 </main>
 
 <footer>
-  <div class="container">
-    © ۲۰۲۵ دکتر محمد سعید سوداگر
-  </div>
+  © ۲۰۲۵ دکتر محمد سعید سوداگر - تمامی حقوق محفوظ است.
 </footer>
-
-<!-- بخش نظرات ثابت کوچک گوشه پایین چپ -->
-<div id="reviews">
-  <div id="reviews-header">نظرات بیماران</div>
-  <iframe src="https://plugin.nobat.ir/dr/comments/374" title="نظرات دکتر"></iframe>
-</div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
