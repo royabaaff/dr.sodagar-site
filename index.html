@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
@@ -13,107 +11,81 @@
 <!-- Bootstrap Icons -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
 <style>
-  /* بک‌گراند کلی و متن */
   body {
     font-family: 'Vazir', Tahoma, sans-serif;
-    background-color: #121a1c; /* تیره ولی مطلق نیست */
-    color: #7fc392; /* سبز ملایم متن */
-    margin-bottom: 120px; /* فضای پایین برای فیکس شدن فوتر و بخش نظرات */
+    background-color: #121212;
+    color: #e0e0e0;
   }
-  /* هدر */
   header {
-    background: #14392a; /* سبز تیره عمیق */
+    background: #1f2937; /* تیره و آرام */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.7);
   }
   header .navbar-brand {
-    color: #a4d4a5; /* سبز روشن لوگو */
+    color: #4ade80; /* سبز نئونی آرام */
     font-weight: 700;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
   }
   header .navbar-nav .nav-link {
-    color: #59a96a; /* سبز-آبی */
+    color: #9ca3af;
     font-weight: 600;
   }
-  header .navbar-nav .nav-link:hover,
-  header .navbar-nav .nav-link.active {
-    color: #a4d4a5; /* روشن‌تر هاور و اکتیو */
+  header .navbar-nav .nav-link:hover, header .navbar-nav .nav-link.active {
+    color: #4ade80;
   }
-  /* بخش هرو */
   .hero {
-    background: url('https://images.unsplash.com/photo-1580281657524-cbc9eea0aef6?auto=format&fit=crop&w=1350&q=80') no-repeat center center;
+    background: linear-gradient(rgba(18,18,18,0.85), rgba(18,18,18,0.85)), url('https://images.unsplash.com/photo-1579154203451-6d9248a6bc11?auto=format&fit=crop&w=1350&q=80') no-repeat center center;
     background-size: cover;
-    color: #a4d4a5;
-    padding: 120px 30px;
+    color: #a7f3d0; /* سبز ملایم */
+    padding: 130px 20px;
     text-align: center;
     font-weight: 700;
-    text-shadow: 0 0 12px rgba(10,50,30,0.9);
+    text-shadow: 0 0 8px rgba(0,0,0,0.9);
+    border-radius: 8px;
+    margin-bottom: 40px;
   }
-  /* تیترها */
   .section-title {
-    color: #4caf50; /* سبز زنده */
-    margin-bottom: 30px;
+    color: #4ade80;
+    margin-bottom: 25px;
     font-weight: 700;
+    border-bottom: 2px solid #4ade80;
+    padding-bottom: 6px;
   }
-  /* آیکون خدمات */
   .service-icon {
-    font-size: 40px;
-    color: #59a96a;
-    margin-bottom: 15px;
+    font-size: 45px;
+    color: #22c55e;
+    margin-bottom: 18px;
+    transition: color 0.3s ease;
   }
-  /* بخش‌ها */
-  main.container {
-    max-width: 900px;
+  .service-icon:hover {
+    color: #86efac;
   }
-  /* لینک ها */
-  a {
-    color: #59a96a;
-    text-decoration: none;
+  main {
+    max-width: 960px;
+    margin: auto;
   }
-  a:hover {
-    color: #a4d4a5;
-    text-decoration: underline;
+  section {
+    margin-bottom: 40px;
+    background-color: #1f2937;
+    padding: 25px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
   }
-  /* فوتر */
   footer {
-    background: #14392a;
-    color: #7fc392;
-    padding: 15px 0;
+    background: #111827;
+    color: #6ee7b7;
+    padding: 18px 0;
     text-align: center;
     font-size: 0.9rem;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    z-index: 100;
+    box-shadow: inset 0 1px 5px rgba(0,0,0,0.6);
   }
-  /* بخش نظرات کوچک و گوشه پایین چپ */
-  #reviews {
-    position: fixed;
-    bottom: 50px;
-    left: 15px;
-    width: 300px;
-    max-height: 400px;
-    background: #1e3a2d;
-    color: #7fc392;
-    border-radius: 10px;
-    box-shadow: 0 0 20px #1e5a2d;
-    overflow-y: auto;
-    font-size: 0.85rem;
-    padding: 10px;
-    z-index: 101;
+  a.contact-link {
+    color: #4ade80;
+    text-decoration: none;
+    font-weight: 600;
   }
-  #reviews-header {
-    background: #256a3c;
-    color: #d1e7d9;
-    font-weight: 700;
-    padding: 5px 10px;
-    border-radius: 8px 8px 0 0;
-    text-align: center;
-    margin-bottom: 8px;
-  }
-  #reviews iframe {
-    width: 100%;
-    height: 320px;
-    border: none;
-    border-radius: 0 0 8px 8px;
+  a.contact-link:hover {
+    text-decoration: underline;
+    color: #86efac;
   }
 </style>
 </head>
@@ -130,7 +102,7 @@
       <ul class="navbar-nav">
         <li class="nav-item"><a class="nav-link active" href="#about">درباره</a></li>
         <li class="nav-item"><a class="nav-link" href="#services">خدمات</a></li>
-        <li class="nav-item"><a class="nav-link" href="#experience">سابقه</a></li>
+        <li class="nav-item"><a class="nav-link" href="#experience">سوابق</a></li>
         <li class="nav-item"><a class="nav-link" href="#contact">تماس</a></li>
       </ul>
     </div>
@@ -140,31 +112,30 @@
 <section class="hero">
   <div class="container">
     <h1>دکتر محمد سعید سوداگر</h1>
-    <p>متخصص جراحی کلیه و مجاری ادراری (اورولوژی) </p>
+    <p>متخصص جراحی کلیه و مجاری ادراری (اورولوژی) در دزفول</p>
   </div>
 </section>
 
-<main class="container my-5">
-  <section id="about" class="mb-5">
+<main>
+  <section id="about">
     <h2 class="section-title">درباره دکتر</h2>
     <p>دکتر محمد سعید سوداگر با بیش از ۳۰ سال سابقه در زمینه اورولوژی، خدمات تخصصی تشخیصی و درمانی بیماری‌های کلیه، مجاری ادراری و دستگاه تناسلی را ارائه می‌دهد. شماره نظام پزشکی: ۲۹۹۱۱.</p>
-    <p><strong>محل کار:</strong> بیمارستان گنجویان دزفول</p>
   </section>
 
-  <section id="services" class="mb-5">
+  <section id="services">
     <h2 class="section-title">خدمات تخصصی</h2>
-    <div class="row">
-      <div class="col-md-4 text-center">
+    <div class="row text-center">
+      <div class="col-md-4 mb-4">
         <i class="bi bi-droplet service-icon"></i>
         <h5>درمان سنگ کلیه</h5>
         <p>ارائه درمان‌های پیشرفته برای انواع سنگ‌های کلیوی.</p>
       </div>
-      <div class="col-md-4 text-center">
+      <div class="col-md-4 mb-4">
         <i class="bi bi-bandaid service-icon"></i>
         <h5>درمان عفونت‌های ادراری</h5>
         <p>تشخیص و درمان سریع و مؤثر عفونت‌های ادراری.</p>
       </div>
-      <div class="col-md-4 text-center">
+      <div class="col-md-4 mb-4">
         <i class="bi bi-people service-icon"></i>
         <h5>مشاوره ناباروری</h5>
         <p>ارائه خدمات تخصصی برای درمان ناباروری مردان.</p>
@@ -172,15 +143,15 @@
     </div>
   </section>
 
-  <section id="experience" class="mb-5">
+  <section id="experience">
     <h2 class="section-title">سوابق کاری</h2>
     <p>بیش از ۳۰ سال سابقه در جراحی کلیه و مجاری ادراری، همکاری با بیمارستان گنجویان دزفول و استفاده از تجهیزات تخصصی مانند سونوگرافی، یورودینامیک و سیستوسکوپی.</p>
   </section>
 
-  <section id="contact" class="mb-5">
+  <section id="contact">
     <h2 class="section-title">تماس با مطب</h2>
     <p><strong>آدرس:</strong> دزفول، خیابان آفرینش، نبش طالقانی</p>
-    <p><strong>تلفن:</strong> ۰۶۱-۲۲۳۵۱۱۷</p>
+    <p><strong>تلفن:</strong> <a class="contact-link" href="tel:0612235117">۰۶۱-۲۲۳۵۱۱۷</a></p>
   </section>
 </main>
 
@@ -190,15 +161,6 @@
   </div>
 </footer>
 
-<!-- بخش نظرات ثابت کوچک گوشه -->
-<div id="reviews">
-  <div id="reviews-header">نظرات بیماران</div>
-  <!-- مثلا با iframe از nobat.ir با لینک مربوط به دکتر -->
-  <iframe src="https://plugin.nobat.ir/dr/comments/374" title="نظرات دکتر"></iframe>
-</div>
-
-<!-- Bootstrap Bundle JS شامل Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
 </body>
 </html>
