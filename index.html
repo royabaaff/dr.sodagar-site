@@ -17,8 +17,13 @@
     color: #e0e0e0;
   }
   header {
-    background: #1f2937;
+    background: rgba(31, 41, 55, 0.6); /* رنگ تیره شفاف */
+    backdrop-filter: blur(10px); /* افکت مات */
+    -webkit-backdrop-filter: blur(10px); /* برای سافاری */
     box-shadow: 0 2px 8px rgba(0,0,0,0.7);
+    position: sticky;
+    top: 0;
+    z-index: 1030; /* بالاتر از محتوا */
   }
   header .navbar-brand {
     color: #4ade80;
@@ -181,6 +186,7 @@
   <section id="contact">
     <h2 class="section-title">تماس با مطب</h2>
     <p><strong>آدرس:</strong> دزفول، خیابان آفرینش، نبش طالقانی</p>
+    <p><strong>آدرس درمانگاه میلاد:</strong> دزفول، درمانگاه میلاد</p>
     <p><strong>تلفن:</strong> <a class="contact-link" href="tel:06142235117">۰۶۱۲۲۳۵۱۱۷</a></p>
     <p><strong>شماره نظام پزشکی:</strong> ۲۹۹۱۱</p>
   </section>
